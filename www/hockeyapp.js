@@ -7,6 +7,9 @@ var hockeyapp = {
     feedback:function(success, failure) {
         exec(success, failure, "HockeyApp", "feedback", []);
     }
+    saveException:function(success, failure, description) {
+        exec(success, failure, "HockeyApp", "saveException", [ description ]);
+    }    
 };
 
 module.exports = hockeyapp;
