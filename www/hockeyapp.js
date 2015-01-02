@@ -5,7 +5,7 @@ var hockeyapp = {
         exec(success, failure, "HockeyApp", "start", [ token ]);
     },
     feedback:function(success, failure) {
-        exec(success, failure, "HockeyApp", "feedback", []);
+        exec(success, failure, "HockeyApp", "feedback", [ token ]);
     },
     saveException:function(success, failure, description) {
         exec(success, failure, "HockeyApp", "saveException", [ description ]);
